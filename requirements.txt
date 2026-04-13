@@ -1,0 +1,7 @@
+# Alternative - Latest stable
+pyautogen>=0.2.0
+chromadb>=0.4.22
+sentence-transformers>=2.2.0
+langchain>=0.1.0
+pypdf>=3.17.0
+transformers>=4.36.0

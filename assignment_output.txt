@@ -1,0 +1,47 @@
+============================================================
+AGENTIC ACADEMIC ASSISTANT - FINAL SUBMISSION
+============================================================
+
+QUESTION: Compare RAG and fine-tuning in LLMs with examples
+ANSWER TYPE: COMPARISON
+
+ANSWER:
+## Definitions
+**Term 1 - Retrieval Augmented Generation (RAG):** RAG is a method where developers incorporate proprietary and domain-specific data into Large Language Models by augmenting the prompt with external knowledge from textual databases, reducing the risk of hallucinations. This approach does not modify the model's parameters but uses additional information to guide its responses (Angels Balaguer et al., 2023).
+**Term 2 - Fine-Tuning:** In contrast, fine-tuning involves incorporating domain-specific knowledge directly into a Large Language Model by adjusting and training only the model's parameters with additional data. This method integrates new information more deeply but can be resource-intensive (Angels Balaguer et al., 2023).
+
+## Comparison Table
+| Feature | Term 1: RAG                           | Term 2: Fine-Tuning                |
+|---------|---------------------------------------|------------------------------------|
+| How it works     | Augments the prompt with external data from textual databases. Does not change model parameters directly (Angels Balaguer et al., 2023).   | Incorporates additional knowledge by adjusting and training only a subset of the LLM's parameters, thus modifying its internal representation to better understand domain-specific concepts (Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning; Angels Balaguer et al., 2023). |
+| Training needed   | Does not require extensive retraining of the model's parameters. Instead, it uses a retrieval system that fetches relevant information on demand (Angels Balaguer et al., 2023).    | Requires training with additional domain-specific data to adjust and refine its internal representations effectively (Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning; Angels Balaguer et al., 2023).                       |
+| Best for          | Ideal when there is a need to quickly integrate external knowledge without extensive retraining, suitable for applications where domain expertise can be leveraged through retrieval systems (Angels Balaguer et al., 2023; Ragas: Automated Evaluation of Retrieval Augmented Generation).   | Best suited for scenarios requiring deep integration of new concepts and knowledge into the LLM, often necessary when dealing with highly specialized domains where existing models may not have sufficient background information (Angels Balaguer et al., 2023; Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning).                      |
+
+## Examples
+- **Example 1 - RAG
+
+---
+📚 **References:** Document_1, Document_2, Document_3
+📊 **Word Count:** 344 words
+🛠️ **Tools Used:** format_citation(), count_words()
+
+============================================================
+SYSTEM SPECIFICATION:
+----------------------------------------
+AGENTS (3):
+  1. Planner Agent - Query decomposition & tool selection
+  2. Retriever Agent - RAG with ChromaDB
+  3. Answer Agent - Response generation with tool calling
+
+TOOLS (2):
+  1. format_citation() - Adds source citations
+  2. count_words() / summarize_text() - Word count & summarization
+
+RAG IMPLEMENTATION:
+  - Vector DB: ChromaDB
+  - Embeddings: sentence-transformers/all-MiniLM-L6-v2
+  - Knowledge Base: 20+ documents
+
+LLM:
+  - Local LLM via LM Studio (Phi-3.1-mini)
+============================================================
