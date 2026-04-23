@@ -1,10 +1,6 @@
 ================================================================
-AGENTIC ACADEMIC ASSISTANT - ASSIGNMENT
+AGENTIC ACADEMIC ASSISTANT
 ================================================================
-Student Name: [Apna naam likho]
-Subject: Advanced NLP
-Assignment: Build an Agentic AI Research Assistant with RAG + Tools
-
 ================================================================
 HOW TO RUN THE SYSTEM (STEP BY STEP)
 ================================================================
@@ -133,24 +129,9 @@ Fine-tuning Example: Medical note summarizer
 ## 5. References
 Document_1, Document_2, Document_3
 
-================================================================
-PRESENTATION TIPS
-================================================================
 
-When presenting to teacher:
-1. Show LM Studio server is running (green message)
-2. Show terminal with (venv) active
-3. Run: python assignment_final.py
-4. Type the assignment question
-5. Show the output with comparison table
-6. Explain: "Ye 3 agents hain - Planner, Retriever, Answerer"
-7. Explain: "Ye 2 tools hain - Citation Formatter aur Word Counter"
 
-================================================================
-SUBMISSION CHECKLIST
-================================================================
 
-[ ] assignment_final.py
 [ ] assignment_output.txt  
 [ ] README.txt
 [ ] requirements.txt
